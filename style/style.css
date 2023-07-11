@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD; 
+    --cor-hover: #1eff00;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 10%;
+
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+
+}
+
+.link_menu {
+
+    text-decoration: none;
+
+}
+
+.link_menu {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao_img{
+    width: 50%;
+}
+
+.apresentacao {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px ;
+}
+
+.apresentacao_conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+}
+
+.titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+
+
+}
+
+.conteudo {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+
+}
+
+.ap_subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 24;
+
+}
+
+.ap_link {
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
+    font-size: 1rem;
+    padding: 21.5px 0;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+}
+
+.ap_link:hover {
+    /* background-color: #272727; */
+    border: 2px solid var(--cor-hover) ;
+    gap: 30px;
+    transition: 300ms;
+
+}
+
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+    .apresentacao {
+        flex-direction: column-reverse ;
+        padding: 5%;
+        
+    }
+
+    .cabecalho {
+        padding: 10%;
+       
+
+    }
+
+    .menu{
+        justify-content: center;
+      
+
+    }
+
+    .apresentacao_conteudo {
+
+        width: auto;
+
+    }
+
+}
